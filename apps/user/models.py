@@ -13,7 +13,7 @@ class User(AbstractUser, BaseModel):
     """
 
     class Meta:
-        db_table = 'df_user'
+        db_table = 'lj_user'
         verbose_name = '用户'
         verbose_name_plural = verbose_name
 
@@ -28,7 +28,7 @@ class Address(BaseModel):
     is_default = models.BooleanField(default=False, verbose_name='是否默认')
 
     class Meta:
-        db_table = 'df_address'
+        db_table = 'lj_address'
         verbose_name = '地址'
         verbose_name_plural = verbose_name
 

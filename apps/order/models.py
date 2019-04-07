@@ -34,7 +34,7 @@ class OrderInfo(BaseModel):
     trade_no = models.CharField(verbose_name='支付编号', max_length=128)
 
     class Meta:
-        db_table = 'df_order_info'
+        db_table = 'lj_order_info'
         verbose_name = '订单'
         verbose_name_plural = verbose_name
 
@@ -50,6 +50,6 @@ class OrderGoods(BaseModel):
     comment = models.CharField(verbose_name='评论', max_length=256)
 
     class Meta:
-        db_table = 'df_order_goods'
+        db_table = 'lj_order_goods'
         verbose_name = '订单商品'
         verbose_name_plural = verbose_name

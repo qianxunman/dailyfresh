@@ -52,7 +52,7 @@ class Goods(BaseModel):
     detial = HTMLField(verbose_name='Goods detail', blank=True)
 
     class Meta:
-        db_table = 'df_goods'
+        # db_table = 'lj_goods'
         verbose_name = '商品SPU'
         verbose_name_plural = verbose_name
 
@@ -65,7 +65,7 @@ class GoodsImage(BaseModel):
     image = models.ImageField(verbose_name='图片路径', upload_to='goods')
 
     class Meta:
-        db_table = 'df_goods_image'
+        # db_table = 'lj_goods_image'
         verbose_name = '商品图片'
         verbose_name_plural = verbose_name
 
@@ -99,7 +99,7 @@ class IndexTypeGoodsBanner(BaseModel):
     index = models.SmallIntegerField(verbose_name='展示顺序', default=0)
 
     class Meta:
-        db_table = 'df_index_type_goods'
+        db_table = 'lj_index_type_goods'
         verbose_name = '主页分类展示商品'
         verbose_name_plural = verbose_name
 
@@ -114,6 +114,6 @@ class IndexPromotionBanner(BaseModel):
     index = models.SmallIntegerField(verbose_name='展示顺序', default=0)
 
     class Meta:
-        db_table = 'df_index_promotion'
+        db_table = 'lj_index_promotion'
         verbose_name = '主要促销活动'
         verbose_name_plural = verbose_name
