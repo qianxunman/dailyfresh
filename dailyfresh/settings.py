@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'tinymce',
     'haystack',
 ]
-
+# import haystack.backends.whoosh_backend
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -182,7 +182,7 @@ HAYSTACK_CONNECTIONS = {
     'default': {
         # 使用whoosh引擎
         # 'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
         # 索引文件路径
         'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
     }
